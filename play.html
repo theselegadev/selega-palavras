@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Selega palavras</title>
+</head>
+<body>
+    <script src="main.js" defer></script>
+    <main id="main">
+        <header>
+            <h1>Selega Palavras</h1>
+        </header>
+        <h2 id="welcome"></h2>
+        <h2 id="choice"></h2>
+        <div class="show_chances">
+            <h2 id="show-chance"></h2>
+        </div>
+        <div id="div">
+    
+        </div>
+        <div class="container-keyboard">
+            <table>
+                <tr>
+                    <td><button onclick="verify('q',arrWord,this)">Q</button></td>
+                    <td><button onclick="verify('w',arrWord,this)">W</button></td>
+                    <td><button onclick="verify('e',arrWord,this)">E</button></td>
+                    <td><button onclick="verify('r',arrWord,this)">R</button></td>
+                    <td><button onclick="verify('t',arrWord,this)">T</button></td>
+                    <td><button onclick="verify('y',arrWord,this)">Y</button></td>
+                    <td><button onclick="verify('u',arrWord,this)">U</button></td>
+                    <td><button onclick="verify('i',arrWord,this)">I</button></td>
+                    <td><button onclick="verify('o',arrWord,this)">O</button></td>
+                    <td><button onclick="verify('p',arrWord,this)">P</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="verify('a',arrWord,this)">A</button></td>
+                    <td><button onclick="verify('s',arrWord,this)">S</button></td>
+                    <td><button onclick="verify('d',arrWord,this)">D</button></td>
+                    <td><button onclick="verify('f',arrWord,this)">F</button></td>
+                    <td><button onclick="verify('g',arrWord,this)">G</button></td>
+                    <td><button onclick="verify('h',arrWord,this)">H</button></td>
+                    <td><button onclick="verify('j',arrWord,this)">J</button></td>
+                    <td><button onclick="verify('k',arrWord,this)">K</button></td>
+                    <td><button onclick="verify('l',arrWord,this)">L</button></td>
+                    <td><button onclick="verify('ç',arrWord,this)">Ç</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button onclick="verify('z',arrWord,this)">Z</button></td>
+                    <td><button onclick="verify('x',arrWord,this)">X</button></td>
+                    <td><button onclick="verify('c',arrWord,this)">C</button></td>
+                    <td><button onclick="verify('v',arrWord,this)">V</button></td>
+                    <td><button onclick="verify('b',arrWord,this)">B</button></td>
+                    <td><button onclick="verify('n',arrWord,this)">N</button></td>
+                    <td><button onclick="verify('m',arrWord,this)">M</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <div class="box-winner">
+        <div class="box-title">
+            <h2>Parabéns você venceu!</h2>
+        </div>
+        <div class="box-image">
+            <img src="./assets/imagem_venceu.png" alt="imagem_de_vitória" width="300px" height="300px">
+        </div>
+        <div class="box-button">
+            <button id="back"><a href="index.html">Voltar</a></button>
+        </div>
+    </div>
+    <div class="box-loser">
+        <div class="box-title">
+            <h2>Não foi dessa vez!</h2>
+        </div>
+        <div class="box-image">
+            <img src="./assets/imagem_perdeu.png" alt="imagem_de_vitória" width="300px" height="300px">
+        </div>
+        <div class="box-button">
+            <button id="back"><a href="index.html">Voltar</a></button>
+        </div>
+    </div>
+</body>
+</html>

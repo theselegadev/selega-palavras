@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Selega Palavras</title>
+</head>
+<body>
+    <script src="script.js" defer></script>
+    <header>
+        <h1>Selega Palavras</h1>
+    </header>
+    <div class="box-input">
+        <label for="inputname">Nome do jogador:</label>
+        <input id="inputname" type="text" placeholder="Nome:">
+    </div>
+    <h2>Escolha o tema da partida:</h2>
+    <div class="choices">
+        <div class="column01">
+            <button onclick="savechoice('objects'), alertchoice('objetos')" id="objects">Objetos</button>
+            <button onclick="savechoice('animals'), alertchoice('animais')" id="animals">Animais</button>
+            <button onclick="savechoice('cars'), alertchoice('carros')" id="cars">Carros</button>
+        </div>
+        <div class="column02">
+            <button onclick="savechoice('colors'), alertchoice('cores')" id="colors">Cores</button>
+            <button onclick="savechoice('states-brazil'),alertchoice('estados do brasil')" id="states-brazil">Estados do Brasil</button>
+            <button onclick="savechoice('markups'), alertchoice('marcas')" id="markups">Marcas</button>
+        </div>
+        <div class="column03">
+            <button onclick="savechoice('foods'), alertchoice('comidas')" id="foods">Comidas</button>
+            <button onclick="savechoice('countries'),alertchoice('países')" id="countries">Países</button>
+            <button onclick="savechoice('general'),alertchoice('geral')" id="general">Geral</button>
+        </div>
+    </div>
+    <div class="box-play">
+        <a href="" id="a"><button onclick="savename(input.value)" id="play">Jogar</button></a>
+    </div>
+</body>
+</html>
